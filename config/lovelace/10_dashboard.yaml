@@ -1,0 +1,32 @@
+title: Dashboard
+icon: mdi:monitor-dashboard
+panel: true
+path: dashboard
+cards:
+  - type: vertical-stack
+    cards:
+      - type: history-graph
+        title: Temperatur
+        hours_to_show: 48
+        entities:
+          - entity: sensor.vadret_hemma_garden_temperature
+            name: Utomhus
+          - entity: sensor.vadret_hemma_indoor_temperature
+            name: Inomhus
+          - entity: sensor.brandvarnare_vardagsrum_temperature
+            name: Vardagsrum
+          - entity: sensor.kallardorr_temperature
+            name: Källare
+      - type: gauge
+        name: CPU usage
+        unit: '%'
+        entity:  sensor.processor_use
+        severity:
+          green: 0
+          yellow: 50
+          red: 85
+      - type: gauge
+        name: Used memory
+        unit: '%'
+        entity: sensor.disk_use_percent
+          

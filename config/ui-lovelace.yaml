@@ -1,0 +1,5 @@
+title: Home
+views:
+  - !include lovelace/00_home_view.yaml
+  - !include lovelace/10_dashboard.yaml
+      

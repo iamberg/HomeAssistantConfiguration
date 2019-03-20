@@ -1,0 +1,43 @@
+title: Home
+icon: mdi:information-outline
+#panel: true
+path: home
+badges:
+  - person.andreas_berg
+  - sensor.yr_symbol
+  - sun.sun
+cards:
+  - type: vertical-stack
+    cards:
+  # The markdown card will render markdown text.
+    - type: markdown
+      title: Belysning
+      content: >
+        Welcome to your **Lovelace UI**.
+    - type: horizontal-stack
+      cards:
+      - type: light
+        entity: light.hoger_koksfonster
+      - type: light
+        entity: light.vanster_koksfonster
+    - type: sensor
+      entity: sensor.vadret_hemma_garden_temperature
+      graph: line
+    - type: entity-button
+      name: Golvlampa
+      icon: 'mdi:lightbulb'
+      entity: switch.golvlampa_turned_on
+  - type: vertical-stack
+    cards: 
+      - type: markdown
+        title: Miljö
+        content: >
+          Utomhusmiljö
+      - type: glance
+        entities:
+          - sensor.pollen_bjork
+          - sensor.pollen_gras
+          - sensor.pollen_grabo
+          - sensor.pollen_al
+          - sensor.pollen_hassel
+          - sensor.pollen_ek

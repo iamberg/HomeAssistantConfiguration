@@ -1,0 +1,7 @@
+__pycache__
+
+.cloud
+.storage
+home-assistant.log
+secrets.yaml
+known_devices.yaml
