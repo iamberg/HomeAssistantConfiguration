@@ -13,15 +13,15 @@ homeassistant:
 
   customize:
     sensor.pollen_gras:
-      friendly_name: Grass
+      friendly_name: Gräs
       icon: mdi:flower
 
     sensor.pollen_grabo:
-      friendly_name: Mugwort
+      friendly_name: Gråbo
       icon: mdi:flower
 
     sensor.pollen_bjork:
-      friendly_name: Birch
+      friendly_name: Björk
       icon: mdi:leaf
 
     sensor.pollen_al:
@@ -29,11 +29,11 @@ homeassistant:
       icon: mdi:leaf
 
     sensor.pollen_hassel:
-      friendly_name: Hazel
+      friendly_name: Hassel
       icon: mdi:leaf
 
     sensor.pollen_ek:
-      friendly_name: Oak
+      friendly_name: Ek
       icon: mdi:leaf
     
 sensor:
@@ -41,10 +41,6 @@ sensor:
     sensors:
       - city: Stockholm
         state: Bjork
-      # - city: Stockholm
-      #   state: Gråbo
-      # - city: Stockholm
-      #   state: Gräs
   - platform: template
     sensors:
       pollen_grabo:

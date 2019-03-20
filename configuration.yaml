@@ -47,8 +47,10 @@ group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 
+# Database
 recorder: !include recorder.yaml
 
+# MQTT Broker
 mqtt:
   broker: !env_var HA_SERVER_MQTT_HOST
   port: !env_var HA_SERVER_MQTT_PORT
