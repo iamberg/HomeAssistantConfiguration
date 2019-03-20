@@ -2,6 +2,7 @@ __pycache__
 
 .cloud
 .storage
+.HA_VERSION
 home-assistant.log
 secrets.yaml
 known_devices.yaml
